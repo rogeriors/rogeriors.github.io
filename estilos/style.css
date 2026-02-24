@@ -52,50 +52,42 @@
 
 .menu li {
     list-style: none;
-    padding: 23px;
-    margin: 5px;
-    
+    align-content: center;
 }
 
-.menu a {
+.link{
     display: flex;
     align-items: center;
-    align-content: center;
-    text-decoration: none;
     color: #063841;
-    
+    text-decoration: none;
+    padding: 10px 15px;
+    justify-content: center;
+    margin: 15px;
 }
 
-.menu a:hover {
-    color: #0b778a;
-    
-}
-
-.menuhover {
-    display: flex;
-    align-items: center;
-    align-content: center;
-}
-
-.menuhover:hover {
+.link:hover {
     background-color: #063841;
-    height: 5px;
-    border-radius: 10px;
     color: white;
+    border-radius: 20px;
+    padding: 10px 15px;
 }
 
 .contat {
     font-weight: bold;
     border: 2px solid #063841;
-    height: 5px;
+    height: 40px;
+    width: 90px;
     display: flex;
     align-items: center;
-    align-content: center;
+    justify-content: center;
     border-radius: 25px;
+    text-decoration: none;
+    color: #063841;
 }
 
 .contat:hover {
-    border: 2px solid #063841;
+    height: 40px;
+    border-radius: 25px;
     background-color: #063841;
     color: white;
 }
@@ -107,6 +99,7 @@
 
 .informacoes {
     height: 500px;
+    width: 100%;
     display: block;
     margin: auto 0px;
     align-content: center;
@@ -133,21 +126,23 @@
 }
 
 .rede {
-    margin-top: 100px;
+    margin-top: 40px;
 }
 
 .rede a {
+    display: inline-block;
+    margin-top: 10px;
     color: #063841;
     background-color: white;
     border-radius: 15px;
     font-size: 3em;
     padding: 10px 40px;
-    margin-right: 20px;
+    margin-right: 10px;
     transition: background-color 0.5s, color 0.5s;
 }
 
 .rede a:hover {
     background-color: #063841;
     color: white;
-    padding: 15px 50px;
+    
 }
