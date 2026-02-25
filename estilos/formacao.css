@@ -1,0 +1,39 @@
+@import url(style.css);
+
+#formacao {
+    background-color: rgba(126, 126, 126, 0.075);
+    border-radius: 20px;
+    box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.281);
+    max-width: 600px;
+
+    h2 {
+        padding: 15px 10px;
+        font-size: 3em;
+    }
+}
+
+#formacao-container {
+    max-width: 600px;
+
+    hr {
+        margin: auto;
+        width: 90%;
+    }
+}
+
+.curso {
+    margin: 20px;
+    min-height: 100px;
+}
+
+.periodo {
+    font-size: 1.2em;
+}
+
+.instituicao {
+    font-size: 1.5em;
+}
+
+.titulacao {
+    font-size: 1.2em;
+}

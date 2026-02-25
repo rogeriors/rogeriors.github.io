@@ -16,13 +16,14 @@
     background-repeat: no-repeat;
     margin: 0px auto;
     align-self: flex-end;
+    grid-area: 2 / 1;
 }
 
 #conteudo {
     display: grid;
     height: 100vh;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
+    grid-template-rows: 70px 1fr;
     align-content: flex-end;
     background-image: url('../imagens/bg2.png');
     background-repeat: no-repeat;
@@ -63,6 +64,8 @@
     padding: 10px 15px;
     justify-content: center;
     margin: 15px;
+    border-radius: 20px;
+    transition: background-color 0.5s, color 0.5s;
 }
 
 .link:hover {
@@ -83,6 +86,8 @@
     border-radius: 25px;
     text-decoration: none;
     color: #063841;
+    margin-left: 15px;
+    transition: background-color 0.5s, color 0.5s;
 }
 
 .contat:hover {
@@ -98,11 +103,12 @@
 }
 
 .informacoes {
-    height: 500px;
+    min-width: 100v;
     width: 100%;
     display: block;
     margin: auto 0px;
     align-content: center;
+    grid-area: 2 / 2;
 }
 
 .inf {
@@ -126,8 +132,10 @@
 }
 
 .rede {
+    display: flex;
     margin-top: 40px;
 }
+
 
 .rede a {
     display: inline-block;
@@ -145,4 +153,18 @@
     background-color: #063841;
     color: white;
     
+}
+
+.hidden {
+    opacity: 0;
+    filter: blur(15px);
+    transition: all 1s;
+    transform: translateX(-100%);
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transition: all 1s;
+    transform: translateX(0);
 }

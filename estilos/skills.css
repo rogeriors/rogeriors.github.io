@@ -1,0 +1,31 @@
+@import url(style.css);
+
+.skills {
+    display: block;
+    margin-top: 40px;
+    max-width: 700px;
+    margin-left: 0;
+}
+
+.skills p {
+    margin-bottom: 10px;
+    font-size: 3em;
+}
+
+.itens{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    color: #063841;
+    background-color: white;
+    border-radius: 15px;
+    font-size: 4em;
+    padding: 20px 80px;
+    transition: background-color 0.5s, color 0.5s;
+}
+
+.itens:hover {
+    background-color: #063841;
+    color: white;
+}
