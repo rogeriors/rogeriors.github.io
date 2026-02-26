@@ -8,6 +8,21 @@
 }
 
 
+body {
+    background-image: url('../imagens/bg4.png');
+    background-repeat: repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+main {
+    flex: 1;
+}
+
+
 #topo {
     height: 70px;
     background-color: white;
@@ -27,7 +42,7 @@
 
 .menu li {
     list-style: none;
-    margin: 5px;
+    
 }
 
 .menu a {
@@ -54,12 +69,8 @@
 }
 
 #conteudo {
-    background-image: url('../imagens/bg4.png');
-    background-repeat: repeat;
-    background-size: cover;
-    padding: 0px 15px;
-    height: 100vh;
-    position: absolute;
+    align-content: flex-start;
+    padding: 20px 15px;
     display: flex;
     flex-flow: row wrap;
 }
@@ -127,8 +138,10 @@
     max-height: 46%;
 }
 
-.img > img {
-    max-height: 10px;
+footer {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
 }
 
 .hidden {

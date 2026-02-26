@@ -37,3 +37,42 @@
     const elements = document.querySelectorAll('.hidden')
 
     elements.forEach((element) => myObserver.observe(element))
+
+
+// 1. Selecionamos os elementos que vamos manipular
+const track = document.getElementById('track');
+const nextBtn = document.getElementById('nextBtn');
+const prevBtn = document.getElementById('prevBtn');
+
+// Selecionamos todos os slides para saber quantos existem
+const slides = document.querySelectorAll('.carousel-slide');
+
+// Variável para guardar a posição atual do carrossel
+let currentIndex = 0;
+
+// 2. Função para mover o carrossel
+function updateCarousel() {
+  // Pega a largura exata de um slide
+  const slideWidth = slides[0].clientWidth;
+  
+  // Move a trilha no eixo X baseado no índice atual
+  track.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
+}
+
+// 3. Adiciona a ação de clique no botão "Avançar"
+nextBtn.addEventListener('click', () => {
+  // Só avança se não estiver no último slide
+  if (currentIndex < slides.length - 1) {
+    currentIndex++;
+    updateCarousel();
+  }
+});
+
+// 4. Adiciona a ação de clique no botão "Voltar"
+prevBtn.addEventListener('click', () => {
+  // Só volta se não estiver no primeiro slide
+  if (currentIndex > 0) {
+    currentIndex--;
+    updateCarousel();
+  }
+});   
