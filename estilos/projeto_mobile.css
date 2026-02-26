@@ -7,40 +7,29 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.img {display: none;}
 
-#boneco-interativo {
-    width: 450px;
-    height: 700px;
-    background-image: url('../imagens/boneco4.png');
-    background-repeat: no-repeat;
-    margin: 0px auto;
-    align-self: flex-end;
-    grid-area: 2 / 1;
-}
-
-#conteudo {
-    display: grid;
-    height: 100vh;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 70px 1fr;
-    align-content: flex-end;
-    background-image: url('../imagens/bg2.png');
-    background-repeat: no-repeat;
+body {
+    background-image: url('../imagens/bg4.png');
+    background-repeat: repeat;
     background-size: cover;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
 }
+
+main {
+    flex: 1;
+}
+
 
 #topo {
-    position: absolute;
-    width: 100vw;
     height: 70px;
     background-color: white;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.068);
 }
 
 .menu {
-    display: grid;
-    grid-template-columns: 20% 1fr 20%;
     height: 100%;
     align-content: center;
 }
@@ -48,63 +37,45 @@
 .menu ul{
     grid-column: 2;
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
 }
 
 .menu li {
     list-style: none;
+    
+}
+
+.menu a {
+    display: flex;
+    align-items: center;
     align-content: center;
-}
-
-.link{
-    display: flex;
-    align-items: center;
-    color: #063841;
     text-decoration: none;
-    padding: 10px 15px;
-    justify-content: center;
-    margin: 15px;
-    border-radius: 20px;
+    color: #063841;
+    padding: 10px 20px;
+    border-radius: 10px;
     transition: background-color 0.5s, color 0.5s;
 }
 
-.link:hover {
+.menu a:hover {
+    color: #0b778a;
+    padding: 10px 20px;
     background-color: #063841;
+    border-radius: 10px;
     color: white;
-    border-radius: 20px;
-    padding: 10px 15px;
 }
 
-.contat {
-    font-weight: bold;
-    border: 2px solid #063841;
-    height: 40px;
-    width: 90px;
+.contat1 {
+    display: none;
+}
+
+#conteudo {
     display: flex;
-    align-items: center;
     justify-content: center;
-    border-radius: 25px;
-    text-decoration: none;
-    color: #063841;
-    margin-left: 15px;
-    transition: background-color 0.5s, color 0.5s;
-}
-
-.contat:hover {
-    height: 40px;
-    border-radius: 25px;
-    background-color: #063841;
-    color: white;
-}
-
-#container {
-    height: 100vh;
-    width: 100vw;
 }
 
 .works-container {
     grid-area: 2 / 2;
-    height: 100%;
+    width: 90vw;
     align-content: center;
 }
 
@@ -120,8 +91,10 @@
 
 /* A janela que esconde o que passa do limite */
 .carousel-track-wrapper {
+
   overflow: hidden;
-  width: 100%;
+  width: 352px;
+  
   border-radius: 8px;
 }
 
@@ -133,25 +106,36 @@
 
 /* Cada slide individual */
 .carousel-slide {
-    height: 500px;
-    min-width: 100%;
-    box-sizing: border-box;
-    padding: 60px 20px;
-    text-align: center;
-    font-size: 24px;
-    font-family: sans-serif;
+    
 }
 
 /* Estilo básico dos botões */
 .carousel-btn {
-  background-color: #00796b;
-  color: white;
-  border: none;
-  padding: 10px 15px;
-  margin: 0 10px;
-  cursor: pointer;
-  border-radius: 4px;
-  font-weight: bold;
+    position: absolute;
+}
+
+.carousel-btn1 {
+    z-index: 1;
+    background-color: #00796b;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin-right: 230px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-weight: bold;
+    
+}
+.carousel-btn2 {
+    left: 255px;
+    background-color: #00796b;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin: 0 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-weight: bold;
 }
 
 .carousel-btn:hover {
@@ -159,9 +143,8 @@
 }
 
 #conteudo-container {
-    max-width: 411.08px;
-    height: 400px;
-
+    max-width: 352px;
+    background-color: white;
     display: block;
     border-radius: 10px;
 }
@@ -170,7 +153,8 @@
     height: 240px;
 }
 
-img {
+.imagem img {
+    background-color: white;
     display: block;
     margin: auto;
     padding-top: 5px;
@@ -179,11 +163,14 @@ img {
     transition: width 0.5s;
 }
 
-img:hover {
+.imagem img:hover {
+    background-color: white;
     width: 365px;
 }
 
 .conteudo {
+    display: block;
+    background-color: white;
     margin-top: 6px;
     font-family: Arial, Helvetica, sans-serif;
     
@@ -209,7 +196,18 @@ img:hover {
 }
 
 .cont-filho {
-    margin: 0px 40px;
+    display: block;
+    margin: 20px;
+    justify-content: center;
+    background-color: white;
+    
+    text-align: justify;
+}
+
+footer {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
 }
 
 .hidden {
@@ -224,8 +222,4 @@ img:hover {
     filter: blur(0);
     transition: all 1s;
     transform: translateX(0);
-}
-
-.btmb {
-    display: none;
 }
