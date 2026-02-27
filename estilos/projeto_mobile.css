@@ -115,19 +115,21 @@ main {
 }
 
 .carousel-btn1 {
+    top: 50%;
     z-index: 1;
     background-color: #00796b;
     color: white;
     border: none;
     padding: 10px 15px;
-    margin-right: 230px;
+    left: 5px;
     cursor: pointer;
     border-radius: 4px;
     font-weight: bold;
     
 }
 .carousel-btn2 {
-    left: 255px;
+    top: 50%;
+    right: -5px;
     background-color: #00796b;
     color: white;
     border: none;
@@ -149,9 +151,7 @@ main {
     border-radius: 10px;
 }
 
-.img {
-    height: 240px;
-}
+
 
 .imagem img {
     background-color: white;
@@ -222,4 +222,46 @@ footer {
     filter: blur(0);
     transition: all 1s;
     transform: translateX(0);
+}
+
+.imagem {
+    width: 352px;
+    height: 200px;
+    background-color: #004d40;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+.imagem:hover {
+    transform: scale(1.02);
+}
+
+.image1 {
+ background-image: url('../imagens/projeto-01-videos.jpg');
+ background-position: 50% 50%;
+ background-size: cover;
+}
+
+.image2 {
+    background-image: url('../imagens/projeto-02-cordel.jpg');
+    background-position: 50% 50%;
+    background-size: cover;
+}
+
+.image3 {
+    background-image: url('../imagens/projeto-03-android.jpg');
+    background-position: 50% 50%;
+    background-size: cover;
+}
+
+.image4 {
+    background-image: url('../imagens/projeto-04-links.jpg');
+    background-position: 50% 50%;
+    background-size: cover;
+}
+
+.image5 {
+    background-image: url('../imagens/projeto-05-login.jpg');
+    background-position: 50% 50%;
+    background-size: cover;
 }

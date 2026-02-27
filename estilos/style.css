@@ -40,7 +40,7 @@
 
 .menu {
     display: grid;
-    grid-template-columns: 20% 1fr 20%;
+    grid-template-columns: 25% 1fr 25%;
     height: 100%;
     align-content: center;
 }
@@ -48,7 +48,7 @@
 .menu ul{
     grid-column: 2;
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-evenly;
 }
 
 .menu li {

@@ -229,3 +229,45 @@ img:hover {
 .btmb {
     display: none;
 }
+
+.imagem {
+    width: 100%;
+    height: 250px;
+    background-color: #004d40;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+.imagem:hover {
+    transform: scale(1.02);
+}
+
+.image1 {
+ background-image: url('../imagens/projeto-01-videos.jpg');
+ background-position: 50% 50%;
+ background-size: cover;
+}
+
+.image2 {
+    background-image: url('../imagens/projeto-02-cordel.jpg');
+    background-position: 50% 50%;
+    background-size: cover;
+}
+
+.image3 {
+    background-image: url('../imagens/projeto-03-android.jpg');
+    background-position: 50% 50%;
+    background-size: cover;
+}
+
+.image4 {
+    background-image: url('../imagens/projeto-04-links.jpg');
+    background-position: 50% 50%;
+    background-size: cover;
+}
+
+.image5 {
+    background-image: url('../imagens/projeto-05-login.jpg');
+    background-position: 50% 50%;
+    background-size: cover;
+}
